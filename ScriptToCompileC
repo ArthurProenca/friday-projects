@@ -1,0 +1,12 @@
+#!/bin/bash
+BASEDIR=$(dirname "$0") #Recebe o caminho do diretorio onde está o script.
+echo "Bem vindo ao script que automatiza seu GCC"
+echo "Digite o nome do arquivo (nao precisa adicionar a extensao"
+    read nome_programa; #Recebe o nome do arquivo.c a ser compilado.
+path="${HOME}/"$BASEDIR"" #Recebe o caminho integral de onde está o .c e o script.
+for file in $path #Para arquivos no caminho integral, faça isto.
+    do
+        gcc "$nome_programa".c -o cpl-"$nome_programa"
+    done #Encerra o laço de repetição
+echo "Arquivo gerado, basta inicia-lo no terminal!"
+#Shit, All I want is to kick of his wonderful ass
